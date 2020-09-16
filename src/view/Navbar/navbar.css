@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap%27");
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+.colorBrand {
+    color: #282841;
+}
+.navBrand {
+    font-family: "Rubik", sans-serif;
+  font-size: 20px;
+}
+.downloadBtn {
+  background-image: linear-gradient(180deg,#0986ff,#00299d);;
+  color: white;
+  padding: 8px 12px;
+}
+@media(max-width:1000px){
+    .navLink{
+        text-align: left;
+    }
+    .btn{
+        display: none;
+    }
+}
