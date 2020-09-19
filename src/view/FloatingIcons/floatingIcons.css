@@ -1,0 +1,521 @@
+.recorderShow {
+  width: 400px;
+}
+.content_recorder {
+  padding-top: 200px !important;
+}
+h1 {
+  font-family: "Rubik", sans-serif;
+
+  color: #282841;
+}
+.mainIcons {
+  position: relative;
+}
+.sameClass {
+  position: absolute;
+  font-size: 16px;
+  text-align: center;
+  color: #282841;
+}
+.sameClass2 {
+  position: absolute;
+  font-size: 16px;
+  text-align: center;
+  color: #282841;
+  filter: blur(10px);
+  opacity: 0.6;
+}
+.appear {
+  right: 60px;
+  bottom: 65px;
+}
+
+.sameClass img {
+  height: 50px;
+}
+.fbMessenger {
+  right: 120px;
+  bottom: 180px;
+}
+.goMeeting {
+  right: 100px;
+  bottom: 300px;
+}
+.skype {
+  right: 250px;
+  bottom: 400px;
+}
+.slack {
+  right: 400px;
+  bottom: 470px;
+}
+.zoom {
+  bottom: 390px;
+  left: 480px;
+}
+.hangout {
+  bottom: 470px;
+  left: 320px;
+}
+.webex {
+  bottom: 370px;
+  left: 150px;
+}
+.viber {
+  bottom: 100px;
+  left: 160px;
+}
+.telegram {
+  bottom: 190px;
+  left: 70px;
+}
+/* Hello */
+.fbMessengerBlur {
+  right: -120px;
+  top: 10px;
+}
+.goMeetingBlur {
+  right: 100px;
+  bottom: 300px;
+}
+.skypeBlur {
+  right: 300px;
+  bottom: 300px;
+}
+.slackBlur {
+  left: 300px;
+  bottom: 350px;
+}
+.zoomBlur {
+  bottom: 390px;
+  left: -480px;
+}
+.hangoutBlur {
+  left: 40px;
+  bottom: 270px;
+}
+.webexBlur {
+  bottom: 370px;
+  left: 150px;
+}
+.viberBlur {
+  bottom: 500px;
+  left: 70px;
+  opacity: 1;
+}
+.telegramBlur {
+  bottom: 500px;
+  left: 70px;
+}
+
+/* Hello */
+
+@media (max-width: 1400px) {
+  .slack {
+    right: 600px;
+  }
+  .zoom {
+    left: 500px;
+  }
+  .hangout {
+    left: 350px;
+  }
+  .webex {
+    left: 150px;
+  }
+  .viber {
+    bottom: 155px;
+  }
+  .telegramBlur {
+    display: none;
+  }
+}
+
+@media (max-width: 1250px) {
+  .fbMessenger {
+    right: 260px;
+  }
+  .skype {
+    right: 350px;
+  }
+  .slack {
+    right: 550px;
+  }
+  .zoom {
+    left: 450px;
+  }
+  .viber {
+    left: 300px;
+  }
+  .hangout {
+    left: 270px;
+  }
+  .fbMessengerBlur {
+    left: 150px;
+  }
+  .viberBlur {
+    right: 150px;
+  }
+}
+
+@media (max-width: 1050px) {
+  /* .sameClass2 {
+    display: none;
+  } */
+  .meeting {
+    right: 150px;
+  }
+  .skype {
+    right: 230px;
+  }
+  .slack {
+    right: 380px;
+  }
+  .viber {
+    left: 220px;
+    bottom: 180px;
+  }
+}
+
+@media (max-width: 900px) {
+  .appear {
+    right: 50px;
+    bottom: 70px;
+  }
+  .fbMessenger {
+    right: 150px;
+    bottom: 180px;
+  }
+  .meeting {
+    right: 60px;
+    bottom: 320px;
+  }
+  .skype {
+    right: 150px;
+    bottom: 500px;
+  }
+  .zoom {
+    left: 510px;
+  }
+  .slack {
+    right: 400px;
+  }
+  .hangout {
+    left: 200px;
+  }
+  .webex {
+    left: 100px;
+  }
+  .telegram {
+    left: 50px;
+  }
+}
+
+@media (max-width: 750px) {
+      .sameClass2 {
+    display: none;
+  }
+  .zoom {
+    left: 280px;
+  }
+  .webex {
+    left: 120px;
+  }
+  .viber {
+    left: 150px;
+  }
+  .hangout {
+    left: 230px;
+  }
+  .telegram {
+    display: none;
+  }
+  .goMeeting {
+    left: 400px;
+    bottom: 350px;
+  }
+  .fbMessenger {
+    right: 80px;
+  }
+  .skype {
+    right: 200px;
+  }
+  .slack {
+    right: 270px;
+    bottom: 450px;
+  }
+  .appear {
+    left: 550px;
+  }
+  .meeting {
+    right: 200px;
+  }
+  .titleTextTitleText {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 640px) {
+  .zoom {
+    left: 250px;
+    bottom: 400px;
+  }
+  .webex {
+    left: 100px;
+  }
+  .viber {
+    left: 80px;
+  }
+  .hangout {
+    left: 100px;
+  }
+  .telegram {
+    left: 330px;
+  }
+  .fbMessenger {
+    right: 100px;
+  }
+  .skype {
+    right: 350px;
+  }
+
+  .slack {
+    right: 100px;
+  }
+  .appear {
+    display: none;
+  }
+  .meeting {
+    right: 120px;
+  }
+}
+@media (max-width: 590px) {
+  .zoom {
+    left: 250px;
+    bottom: 400px;
+  }
+  .webex {
+    left: 100px;
+  }
+  .viber {
+    left: 80px;
+  }
+  .hangout {
+    left: 50px;
+  }
+  .telegram {
+    left: 330px;
+  }
+  .fbMessenger {
+    right: 50px !important;
+  }
+  .skype {
+    right: 350px;
+  }
+
+  .slack {
+    right: 150px;
+  }
+  .appear {
+    display: none;
+  }
+  .meeting {
+    right: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .zoom {
+    left: 230px;
+    bottom: 400px;
+  }
+  .zoom img {
+    width: 60px;
+  }
+  .webex {
+    left: 90px;
+    bottom: 320px;
+  }
+
+  .viber {
+    left: 50px;
+  }
+  .hangout {
+    left: 50px;
+    bottom: 400px;
+  }
+  .telegram {
+    left: 120px;
+  }
+
+  .skype {
+    right: 260px;
+    bottom: 800px;
+  }
+
+  .slack {
+    right: 100px;
+    bottom: 850px;
+  }
+  .appear {
+    right: 50px;
+  }
+  .meeting {
+    right: 200px;
+    bottom: 950px;
+  }
+  .titleTextTitleText {
+    font-size: 30px;
+  }
+}
+
+@media (max-swidth: 350px) {
+  .zoom {
+    left: 180px;
+  }
+  .webex {
+    left: 60px;
+  }
+  .hangout {
+    left: 170px;
+  }
+  .telegram {
+    left: 100px;
+  }
+  .skype {
+    display: none;
+  }
+  .slack {
+    right: 40px;
+    bottom: 800px;
+  }
+  .meeting {
+    right: 150px;
+    bottom: 850px;
+  }
+  .appear {
+    left: 50px;
+    bottom: 970px;
+  }
+}
+@media (max-width: 440px) {
+  .recorderShow {
+    width: 400px;
+  }
+  .zoom {
+    left: 230px;
+    bottom: 400px;
+  }
+
+  .webex {
+    left: 90px;
+    bottom: 420px;
+  }
+
+  .hangout {
+    left: 200px;
+    bottom: 610px;
+  }
+  .telegram {
+    left: 120px;
+  }
+
+  .skype {
+    right: 260px;
+    bottom: 800px;
+  }
+  .fbMessenger {
+    right: 20px !important;
+  }
+  .goMeeting {
+    left: 320px;
+    bottom: 320px;
+  }
+}
+
+@media (max-width: 374px) {
+  .recorderShow {
+    width: 350px ;
+  }
+  .goMeeting {
+    left: 280px;
+    bottom: 300px;
+  }
+  .fbMessenger {
+    right: 0px !important;
+    bottom: 150px;
+  }
+  .viber {
+    bottom: 150px;
+    left: 05px !important;
+  }
+}
+@media (max-width: 350px) {
+  .recorderShow {
+    width: 280px !important;
+  }
+  .zoom {
+    left: 180px;
+  }
+  .webex {
+    left: 60px;
+  }
+  .hangout {
+    left: 170px;
+  }
+  .telegram {
+    left: 100px;
+  }
+  .skype {
+    display: none;
+  }
+  .goMeeting {
+    left: 250px;
+    bottom: 300px;
+  }
+  .fbMessenger {
+    right: 0px !important;
+    bottom: 120px;
+  }
+  .fbMessenger img{
+      height:30px;
+  }
+}
+@media (max-width: 300px) {
+  .recorderShow {
+    width: 280px !important;
+  }
+  .viber img{
+      height:30px
+  }
+  .goMeeting img{
+      height: 30px;
+  }
+  .zoom {
+    left: 180px;
+  }
+  .webex {
+    left: 60px;
+  }
+  .hangout {
+    left: 170px;
+  }
+  .telegram {
+    left: 100px;
+  }
+  .skype {
+    display: none;
+  }
+  .goMeeting {
+    left: 250px;
+    bottom: 300px;
+  }
+  .fbMessenger {
+    right: 0px !important;
+    bottom: 120px;
+  }
+  .fbMessenger img{
+      height:30px;
+  }
+}

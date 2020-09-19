@@ -1,19 +1,23 @@
 import React from "react";
 import NavbarHeader from "../Navbar/index";
 import "./header.css";
+import FloatingIcons from "../FloatingIcons/index";
+import LaptopView from "../LaptopView/index";
+
+
 const Header = () => {
   return (
     <div className="headerWrapper">
     <NavbarHeader />
-      <div className="headerContent mt-5 pt-4">
+      <div className="headerContent my-5 pt-4">
         <p className="heading">Mutify for Mac</p>
         <p className="text">
           Use a shortcut or the touch bar on any Mac device to quickly mute your
           microphone
         </p>
         <div>
-          <button className="downloadBtnHeder mx-3">Download</button>
-          <button className="priceBtn">Buy: $4.99</button>
+          <button className="downloadBtnHeder m-1 mx-3">Download</button>
+          <button className="priceBtn m-1">Buy: $4.99</button>
         </div>
         <div className=" videoBox text-center mt-5">
           <video
@@ -26,6 +30,10 @@ const Header = () => {
           </div>
         </div>
       </div>
+      <div className="mt-5">
+ <FloatingIcons/>
+ <LaptopView/>
+    </div>
     </div>
   );
 };
