@@ -20,6 +20,7 @@ const firebaseConfig = {
 };
 
 firebase.initializeApp(firebaseConfig);
+const storage = firebase.storage();
 
 const login = () => {
   const provider = new firebase.auth.FacebookAuthProvider();
@@ -35,22 +36,55 @@ const logOut = () => {
 };
 
 const addUserToFirebase = (uid, email, userName) => {
-  console.log("from Firebase ***", uid, email, userName);
   firebase.firestore().collection("user").doc(uid).set({
     userId: uid,
     userEmail: email,
     userName: userName,
   });
 };
-const addCompanyToFirebase = (companyList,userId) => {
-  const obj=companyList;
-  obj["userId"]=userId
+const addCompanyToFirebase = (companyListInstance,id) => {
   firebase.firestore().collection("companyList").add({
-   obj
-  }); 
+    companyName: companyListInstance.companyName,
+    userId: companyListInstance.userId,
+    since: companyListInstance.since,
+    timingFrom: companyListInstance.timingFrom,
+    timingTo: companyListInstance.timingTo,
+    companyId:id
+  });
 };
 const currentUser = () => {
   return firebase.auth().onAuthStateChanged();
+};
+const getAllCompanies = () => {
+  return firebase.firestore().collection("companyList").get();
+};
+const getId = (param) => {
+  return firebase
+    .firestore()
+    .collection("companyList")
+    .where("companyName", "==", param)
+    .get();
+};
+// const getCompId=(param)=>{
+//   firebase.firestore().collection("companyList").doc(param)
+// }
+const updateDailyDetails = (docId, addTokens, addTime, date) => {
+  firebase.firestore().collection("companyList").doc(docId).update({
+    timeTurned: addTime,
+    totalTokens: addTokens,
+    createdOn: date,
+  });
+};
+const resetTokens = (docId) => {
+  firebase.firestore().collection("companyList").doc(docId).update({
+    totalTokens: 0,
+  });
+};
+const getDetails = (docID) => {
+  return firebase.firestore().collection("companyList").doc(docID).get();
+};
+const delete_company = (param) => {
+  return firebase.firestore().collection("companyList").doc(param).delete();
 };
 export {
   login,
@@ -59,4 +93,11 @@ export {
   firebase,
   addUserToFirebase,
   currentUser,
+  getAllCompanies,
+  getId,
+  updateDailyDetails,
+  resetTokens,
+  getDetails,
+  delete_company,
+  storage,
 };
