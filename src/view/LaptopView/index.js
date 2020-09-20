@@ -27,6 +27,13 @@ const LaptopView = () => {
           <img src="https://mutify.app/images/magnifier-1878b93fb0.png" />
         </div>
       </div>
+        <p className="text2 text-center mt-2">
+          Use a shortcut or the touch bar on any Mac device to quickly mute your
+          microphone
+        </p>
+      <div className="text-center my-3">
+          <button className="downloadBtnHeder m-1 mx-3">Download</button>
+          hsla(0,0%,100%,.7)        </div>
     </div>
   );
 };

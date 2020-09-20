@@ -1,0 +1,141 @@
+.mainWrapper {
+  max-width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  position: relative;
+  z-index: 1;
+}
+.content {
+  background-image: url("https://mutify.app/images/noise-level@2x-8a4e6451fa.jpg");
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: 50%; */
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 30px 80px 0 rgba(85, 85, 135, 0.4);
+  box-shadow: 0 30px 80px 0 rgba(85, 85, 135, 0.4);
+  padding: 100px 50px !important;
+  height: 600px;
+}
+.img_volume {
+  margin-top: -100px;
+  width: 500px;
+  height: 500px;
+}
+.img_side,
+.mainContent {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+.displayHeading {
+  font-size: 50px;
+  letter-spacing: 2px;
+}
+.displayPara {
+  font-size: 22px;
+  color: hsla(0, 0%, 100%, 0.7) !important;
+}
+@media (max-width: 910px) {
+  .displayHeading {
+    font-size: 40px;
+  }
+  .displayPara {
+    font-size: 22px;
+    color: hsla(0, 0%, 100%, 0.7) !important;
+  }
+}
+@media (max-width: 768px) {
+  .displayHeading {
+    font-size: 35px;
+  }
+  .displayPara {
+    font-size: 22px;
+    color: hsla(0, 0%, 100%, 0.7) !important;
+  }
+  .img_volume {
+    padding: 50px 0px;
+    width: 400px;
+    height: 500px;
+  }
+  .img_side,
+  .mainContent {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    text-align: left;
+  }
+  .content {
+    height: 700px;
+  }
+}
+@media (max-width: 560px) {
+  .displayHeading {
+    font-size: 30px;
+  }
+  .displayPara {
+    font-size: 20px;
+    color: hsla(0, 0%, 100%, 0.7) !important;
+  }
+  .img_volume {
+    width: 400px;
+    height:500px;
+  }
+  .img_side,
+  .mainContent {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    text-align: left;
+  }
+  .content {
+    height: 720px;
+  }
+}
+@media (max-width: 415px) {
+  .displayHeading {
+    font-size: 25px;
+  }
+  .displayPara {
+    font-size: 18px;
+    color: hsla(0, 0%, 100%, 0.7) !important;
+  }
+  .img_volume {
+    width: 300px;
+    height:500px;
+  }
+  .img_side,
+  .mainContent {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    text-align: left;
+  }
+  .content {
+    height: 720px;
+  }
+}
+@media (max-width: 378px) {
+  .displayHeading {
+    font-size: 22px;
+  }
+  .displayPara {
+    font-size: 16px;
+    color: hsla(0, 0%, 100%, 0.7) !important;
+  }
+  .img_volume {
+    width: 300px;
+    height:500px;
+  }
+  .img_side,
+  .mainContent {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    text-align: left;
+  }
+  .content {
+    height: 750px;
+  }
+}

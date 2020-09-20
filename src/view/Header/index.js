@@ -3,6 +3,7 @@ import NavbarHeader from "../Navbar/index";
 import "./header.css";
 import FloatingIcons from "../FloatingIcons/index";
 import LaptopView from "../LaptopView/index";
+import VolumeControl from "../VolumeControl/index";
 
 
 const Header = () => {
@@ -33,6 +34,7 @@ const Header = () => {
       <div className="mt-5">
  <FloatingIcons/>
  <LaptopView/>
+ <VolumeControl/>
     </div>
     </div>
   );
