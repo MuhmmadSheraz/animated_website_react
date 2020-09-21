@@ -33,7 +33,8 @@ const LaptopView = () => {
         </p>
       <div className="text-center my-3">
           <button className="downloadBtnHeder m-1 mx-3">Download</button>
-          hsla(0,0%,100%,.7)        </div>
+          <button className="priceBtn m-1">Buy: $4.99</button>
+        </div>
     </div>
   );
 };

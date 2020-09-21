@@ -4,6 +4,7 @@ import "./header.css";
 import FloatingIcons from "../FloatingIcons/index";
 import LaptopView from "../LaptopView/index";
 import VolumeControl from "../VolumeControl/index";
+import {Footer} from "../Footer/index"
 
 
 const Header = () => {
@@ -35,6 +36,7 @@ const Header = () => {
  <FloatingIcons/>
  <LaptopView/>
  <VolumeControl/>
+ <Footer/>
     </div>
     </div>
   );

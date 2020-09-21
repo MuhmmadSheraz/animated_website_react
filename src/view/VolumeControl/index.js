@@ -1,11 +1,13 @@
 import React from "react";
+// import { BallBeat } from "react-pure-loaders";
 import "./volume.css";
-import { Button, Row, Col } from "react-bootstrap";
+import { Button, Row, Col,Container } from "react-bootstrap";
+
 const VolumeControl = () => {
   return (
     <>
-      <div className="mainWrapper ">
-        <div className="content p-5">
+      <div className="mainWrapper mb-5 ">
+       <div className="content p-5">
           <Row>
             <Col md="5">
               <div className="mainContent">
@@ -16,7 +18,9 @@ const VolumeControl = () => {
                   <p className="text-muted displayPara mt-1">
                     Use a shortcut to&nbsp;quickly access a&nbsp;window for
                     your&nbsp;microphone volume&nbsp;controls
-              <button className="priceBtn mt-5 d-block">Buy: $4.99</button>
+                    <button className="priceBtn mt-5 d-block">
+                      Buy: $4.99
+                    </button>
                   </p>
                 </div>
               </div>
@@ -27,10 +31,16 @@ const VolumeControl = () => {
                   className="img_volume"
                   src="https://mutify.app/images/wave-c1b84a9196.png"
                 />{" "}
+                <div className="volumeLoaderWrapper">
+                  {/* <BallBeat color={"#fff"} loading={true} /> */}
+                  {/* <BallBeat color={"#fff"} loading={true} />
+                  <BallBeat className="dot" color={"#fff"} loading={true} /> */}
+                </div>
               </div>
             </Col>
           </Row>
         </div>
+
       </div>
     </>
   );
