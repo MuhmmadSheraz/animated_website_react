@@ -1,6 +1,0 @@
-REDUX REMAINING TOPICS
-Redux Thunk 
-Redux persist
-
-***Redux persist***
-use to save data on refersh and sync data localStorage
